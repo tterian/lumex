@@ -14,4 +14,15 @@
  *= require_self
  */
 
- @import "lumx.css";
+ @mixin clearfix {
+ 	zoom:1;
+ 	&:before, &:after {
+ 		clear:both;
+ 		content:"";
+ 		display:table
+ 	}
+ }
+
+@import "lumx/dist/css/lumx";
+@import "lumx/dist/scss/core/core";
+@import "lumx/dist/scss/main/lumx";
