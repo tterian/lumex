@@ -5,28 +5,28 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: postgresql
-  encoding: UTF8
-  pool: 5
-  timeout: 5000
+ adapter: postgresql
+ encoding: UTF8
+ pool: 5
+ timeout: 5000
 
 development:
-  <<: *default
-  database: db/lumex_development
-  host: localhost
-  username: tigranas
-  password: ***
+ <<: *default
+ database: db/lumex_development
+ host: localhost
+ username: tigranas
+ password: 
 
 test:
-  <<: *default
-  database: db/lumex_test
-  host: localhost
-  username: tigranas
-  password: ***
+ <<: *default
+ database: db/lumex_test
+ host: localhost
+ username: tigranas
+ password: 
 
 production:
-  <<: *default
-  database: db/lumex_production
-  host: localhost
-  username: tigranas
-  password: ***
+ <<: *default
+ database: db/lumex_production
+ host: localhost
+ username: tigranas
+ password: 
