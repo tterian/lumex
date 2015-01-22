@@ -1,0 +1,35 @@
+<div class="grid">
+    	<div class="data-table-container">	
+    		<table class="data-table data-table--has-primary data-table--has-secondary">
+        		<thead>
+            		<tr>
+                		<th></th>
+                		<th></th>
+                		<th></th>
+                		<th></th>
+                		<th></th>
+            		</tr>
+        		</thead>
+
+        		<tbody>
+	            	<tr class="data-table__clickable-row" ng-repeat="car in listerApp.cars | filter:query | orderBy:'price'">
+    	            	<td>
+	        	            <div lx-thumbnail thumbnail-src={{car.images[0]}} thumbnail-width="60" thumbnail-height="60"></div>
+            	    	</td>
+                		<td>
+                    		<span>{{car.make}}</span>
+                		</td>
+                		<td>
+                    		<span>{{car.model}}</span>
+                		</td>
+                		<td>
+                    		<span>{{car.year}}</span>
+                		</td>
+                		<td>
+                    		<span>{{car.price | currency}}</span>
+                		</td>
+            		</tr>
+        		</tbody>
+    		</table>
+    	</div>
+</div>

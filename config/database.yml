@@ -1,0 +1,32 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+default: &default
+  adapter: postgresql
+  encoding: UTF8
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: db/lumex_development
+  host: localhost
+  username: tigranas
+  password: ***
+
+test:
+  <<: *default
+  database: db/lumex_test
+  host: localhost
+  username: tigranas
+  password: ***
+
+production:
+  <<: *default
+  database: db/lumex_production
+  host: localhost
+  username: tigranas
+  password: ***
