@@ -1,0 +1,39 @@
+<div class="grid mt pl pr">
+	<div class="grid__col6">
+		<span class="fs-headline">Posting and selling cars can be so easy!</span><br />
+		 <p class="fs-subhead">In Listr we believe that selling a car can be an easy and effortless task to do. Our main goal is to remove all the headache coupled with selling a car. Our simplified user interface guarantees a harmless and joyful expereince for our clients.</p><br />
+	</div>
+
+	<div class="grid__col6">
+		<span class="fs-headline">We will be happy to hear from you.</span>
+		<form>
+			<lx-text-field label="First and last name" fixed-label="true" icon="person">
+				<input type="text" ng-model="textFields.fixedFirstNameDark">
+			</lx-text-field>
+
+			<lx-text-field label="Phone number" fixed-label="true" icon="phone">
+				<input type="text" ng-model="textFields.fixedLastNameDark">
+			</lx-text-field>
+
+			<lx-text-field label="Email address" fixed-label="true" icon="email">
+				<input type="email" ng-model="textFields.fixedEmailDark">
+			</lx-text-field>
+		</form>
+	</div>
+</div>
+
+<div class="grid mt pl pr pb">
+	<div class="grid__col12">
+		<lx-text-field label="Description" type="area" model="textFields.description">
+			<textarea ng-model="textFields.descriptionDark"></textarea>
+		</lx-text-field>
+	</div>
+</div>
+
+<div class="grid mt pl pr pb">
+	<div class="grid__col12">
+		<button class="btn btn--m btn--blue btn--raised" lx-ripple>Submit</button>
+	</div>
+</div>
+
+

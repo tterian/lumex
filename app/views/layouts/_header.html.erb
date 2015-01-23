@@ -1,42 +1,48 @@
+<div class="card">
+	<div class="toolbar grid">
+		<!-- Main Icon -->
+		<div class="toolbar__left mr">
+			<button class="btn btn--l btn--black btn--icon" lx-ripple>
+				<a href="/"><i class="mdi mdi--menu"></i></a>
+			</button>
+		</div>
 
-	<div class="card">
-	    <div class="toolbar grid">
+		<span class="toolbar__label fs-title">Listr</span>
 
-	    	<!-- Main Icon -->
-	        <div class="toolbar__left mr">
-	            <button class="btn btn--l btn--black btn--icon" lx-ripple>
-	                <i class="mdi mdi--menu"></i>
-	            </button>
-	        </div>
-	        <span class="toolbar__label fs-title">Listr</span>
+		<!-- Left Section -->
+		<div class="toolbar__left add-bar">
+			<div>
+				<button class="btn btn--m btn--black btn--icon" lx-ripple lx-tooltip="Add a car" tooltip-position="bottom">
+					<i class="mdi mdi--add"></i>
+				</button>
+			</div>
+		</div>
 
-			<!-- Right Section -->
-	        <div class="toolbar__right">
+		<!-- Right Section -->
+		<div class="toolbar__right">
+			<lx-dropdown position="right" from-top>
+				<button class="btn btn--l btn--black btn--icon" lx-ripple lx-dropdown-toggle>
+					<i class="mdi mdi--more-vert"></i>
+				</button>
+				<lx-dropdown-menu>
+					<ul>
+						<li><a href="/help" class="dropdown-link">Help</a></li>
+						<li><a href="/pricing" class="dropdown-link">Pricing</a></li>
+						<li><a href="/growingYAY" class="dropdown-link">Help us to grow</a></li>
+						<li class="dropdown-divider"></li>
+						<li><a class="dropdown-link dropdown-link--is-header">Account Settings</a></li>
+						<li><a class="dropdown-link">Profile</a></li>
+						<li><a class="dropdown-link">Log out</a></li>
+					</ul>
+				</lx-dropdown-menu>
+			</lx-dropdown>
+		</div>
 
-	            <lx-dropdown position="right" from-top>
-	                <button class="btn btn--l btn--black btn--icon" lx-ripple lx-dropdown-toggle>
-	                    <i class="mdi mdi--more-vert"></i>
-	                </button>
-
-	                <lx-dropdown-menu>
-	                    <ul>
-	                        <li><a class="dropdown-link">Help</a></li>
-	                        <li><a class="dropdown-link">About</a></li>
-	                        <li><a class="dropdown-link">Help us to grow</a></li>
-	                        <li class="dropdown-divider"></li>
-	                        <li><a class="dropdown-link dropdown-link--is-header">Account Settings</a></li>
-	                       	<li><a class="dropdown-link">Profile</a></li>
-	                        <li><a class="dropdown-link">Log out</a></li>
-	                    </ul>
-	                </lx-dropdown-menu>
-	            </lx-dropdown>
-	            
-	        </div>
-
-	        <div class="toolbar__right">
-	            <div class="search-bar">
-	                <lx-search-filter model="query" filter-width="100%" placeholder="Search a car"></lx-search-filter>
-	            </div>
-	        </div>
-	    </div>
+		<div class="toolbar__right">
+			<div class="search-bar">
+				<lx-search-filter model="query" filter-width="100%" placeholder="Search a car"></lx-search-filter>
+			</div>
+		</div>
+			
 	</div>
+</div>

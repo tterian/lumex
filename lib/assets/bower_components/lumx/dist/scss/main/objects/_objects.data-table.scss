@@ -23,6 +23,7 @@
     & > tbody > tr > td {
         height: quadruple($md-spacing-unit);
         padding: halve($base-spacing-unit) $md-spacing-unit;
+        border-bottom: 1px solid $black-4;
     }
 
     & > thead > tr > th {
@@ -47,7 +48,7 @@
     & > tbody > tr > td:first-child {
         img,
         .thumbnail {
-            border-radius: 50%;
+            border-radius: 6%;
             overflow: hidden;
         }
     }
@@ -74,3 +75,4 @@
             background-color: $grey-100;
         }
     }
+

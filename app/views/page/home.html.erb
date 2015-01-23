@@ -1,35 +1,23 @@
-<div class="grid">
+<div class="grid mt pl pr">
+	<div class="grid__col12">
     	<div class="data-table-container">	
     		<table class="data-table data-table--has-primary data-table--has-secondary">
-        		<thead>
-            		<tr>
-                		<th></th>
-                		<th></th>
-                		<th></th>
-                		<th></th>
-                		<th></th>
-            		</tr>
-        		</thead>
-
         		<tbody>
-	            	<tr class="data-table__clickable-row" ng-repeat="car in listerApp.cars | filter:query | orderBy:'price'">
+	            	<tr class="data-table__clickable-row" ng-repeat="car in listerApp.cars | filter:query | orderBy:'-created_at'">
     	            	<td>
-	        	            <div lx-thumbnail thumbnail-src={{car.images[0]}} thumbnail-width="60" thumbnail-height="60"></div>
+	        	            <div lx-thumbnail thumbnail-src={{car.images[0]}} thumbnail-width="120" thumbnail-height="120"></div>
             	    	</td>
                 		<td>
-                    		<span>{{car.make}}</span>
+                    		<span>{{car.year}} {{car.make}} {{car.model}}</span>
+                    		<p><small>added: {{car.created_at | date:'MM/dd/yyyy @ h:mma'}}</small></p>
                 		</td>
+
                 		<td>
-                    		<span>{{car.model}}</span>
-                		</td>
-                		<td>
-                    		<span>{{car.year}}</span>
-                		</td>
-                		<td>
-                    		<span>{{car.price | currency}}</span>
+                    		<span class="fs-headline">{{car.price | currency:"$":0}}</span>
                 		</td>
             		</tr>
         		</tbody>
     		</table>
     	</div>
+    </div>
 </div>

@@ -1,0 +1,43 @@
+var cars = [
+	{
+		make: "BMW",
+		model: "5 series Gran Turismo",
+		year: "2014",
+		price: 60200,
+		description: "Fast got even faster",
+		created_at: "2015-01-22T14:36:31.764546+02:00",
+		soldOut: false,
+		images: [
+			"assets/bmw/5-series/bmw_01_cropped.jpg",
+			"assets/bmw/5-series/bmw_02_cropped.jpg",
+			"assets/bmw/5-series/bmw_03_cropped.jpg"
+		]
+	},
+	{
+		make: "Audi",
+		model: "A6",
+		year: "2015",
+		price: 44800,
+		description: "For luxury lovers",
+		created_at: "2015-01-22T13:36:31.764546+02:00",
+		soldOut: false,
+		images: [
+			"assets/audi/audi_01_cropped.jpg",
+			"assets/audi/audi_02_cropped.jpg",
+			"assets/audi/audi_03_cropped.jpg"
+		]
+	},
+	{
+		make: "Mercedec-Benz",
+		model: "C300",
+		year: "2015",
+		price: 38400,
+		description: "Affordable comfort",
+		created_at: "2015-01-21T15:36:31.764546+02:00",
+		soldOut: false,
+		images: [
+			"assets/merc/merc_01_cropped.jpg",
+			"assets/merc/merc_02_cropped.jpg",
+			"assets/merc/merc_03_cropped.jpg"
+		]
+	}];

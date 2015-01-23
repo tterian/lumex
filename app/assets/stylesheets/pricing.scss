@@ -1,0 +1,19 @@
+
+.pricing-headline {
+	text-align: center;
+}
+
+.card {
+	text-align: center;
+	.card__content {
+		.paragraph {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
+	.card__top strong{
+		color: white;
+		text-align: center;
+		padding-bottom: 12px;
+	}
+}
