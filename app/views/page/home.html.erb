@@ -3,7 +3,7 @@
     	<div class="data-table-container">	
     		<table class="data-table data-table--has-primary data-table--has-secondary">
         		<tbody>
-	            	<tr class="data-table__clickable-row" ng-repeat="car in listerApp.cars | filter:query | orderBy:'-created_at'">
+	            	<tr class="data-table__clickable-row" ng-repeat="car in cars | filter:query | orderBy:'-created_at'">
     	            	<td>
 	        	            <div lx-thumbnail thumbnail-src={{car.images[0]}} thumbnail-width="120" thumbnail-height="120"></div>
             	    	</td>

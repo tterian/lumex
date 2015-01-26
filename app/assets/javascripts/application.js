@@ -19,7 +19,7 @@
 
 var listerApp = angular.module('listerApp', ['lumx']);
 
-listerApp.controller('CarsController', function($scope, LxNotificationService, LxDialogService) {
+listerApp.controller('CarsController', function($scope) {
 	$scope.cars = cars;
 
 });
