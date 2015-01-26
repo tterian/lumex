@@ -1,0 +1,70 @@
+<div class="grid mt pl pr">
+	<span class="fs-headline">Adding a car in one, two, three!</span><br />
+	
+	<div class="grid__col3">	
+        <lx-select ng-model="selects.selectedPerson" placeholder="Car Make" choices="cars" floating-label>
+            <lx-select-selected>
+                {{ $selected.make }}
+            </lx-select-selected>
+
+            <lx-select-choices>
+                {{ $choice.make }}
+            </lx-select-choices>
+        </lx-select>
+    </div>
+
+	<div class="grid__col3">	
+        <lx-select ng-model="selects.selectedPerson" placeholder="Car Model" choices="cars" floating-label>
+            <lx-select-selected>
+                {{ $selected.model }}
+            </lx-select-selected>
+
+            <lx-select-choices>
+                {{ $choice.model }}
+            </lx-select-choices>
+        </lx-select>
+    </div>
+
+	<div class="grid__col3">	
+        <lx-select ng-model="selects.selectedPerson" placeholder="Year" choices="cars" floating-label>
+            <lx-select-selected>
+                {{ $selected.year }}
+            </lx-select-selected>
+
+            <lx-select-choices>
+                {{ $choice.year }}
+            </lx-select-choices>
+        </lx-select>
+    </div>
+
+    <div class="grid__col3">
+        <lx-text-field label="Price">
+            <input type="text" ng-model="car.price">
+        </lx-text-field>
+    </div>
+</div>
+
+
+<div class="grid mt pl pr">
+	<div class="grid__col12">
+        <lx-text-field label="Description" type="area" model="car.description">
+            <textarea ng-model="textFields.descriptionDark"></textarea>
+        </lx-text-field>
+    </div>
+</div>
+
+
+<div class="grid mt pl pr">
+    <div class="grid__col6">
+        <lx-file-input label="Add a picture of your car..."></lx-file-input>
+    </div>
+</div>
+
+<div class="grid mt pl pr">
+    <div class="grid__col6">
+    	<button class="btn btn--m btn--blue btn--raised" ng-click="addCar()" lx-ripple>Submit</button>
+    </div>
+</div>
+
+
+
